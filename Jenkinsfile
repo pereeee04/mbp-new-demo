@@ -6,5 +6,12 @@ pipeline{
         echo "this is multi branch pipeline"
         }
       }
+    stages{
+      stage("Hello"){
+        When{
+          branch "develop"
+          }
+        }
+      }
     }
   }

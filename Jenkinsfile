@@ -3,10 +3,8 @@ pipeline{
   stages{
     stage("Hello"){
       steps{
-        when{
-          branch "develop"
+        echo "this is multi branch pipeline"
         }
       }
     }
   }
-}

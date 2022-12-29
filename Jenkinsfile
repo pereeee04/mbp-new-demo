@@ -7,8 +7,10 @@ pipeline{
       }
     }
     stage("Hello"){
-      when{
-        branch "develop"
+      steps{
+        when{
+          branch "develop"
+        }
       }
     }
   }
